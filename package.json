@@ -1,0 +1,19 @@
+{
+  "name": "rlf-algorithm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsx index.ts",
+    "dev:watch": "npx tsx --watch index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "2.2.7",
+    "@types/node": "^24.9.1",
+    "tsx": "^4.20.6"
+  }
+}

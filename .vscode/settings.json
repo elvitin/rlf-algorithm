@@ -1,0 +1,19 @@
+{
+	"editor.tabSize": 2,
+	"explorer.compactFolders": false,
+	"editor.formatOnSave": true,
+	"scm.compactFolders": false,
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.minimap.enabled": false,
+	"git.autofetch": true,
+	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	}
+}
