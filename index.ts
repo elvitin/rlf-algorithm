@@ -23,3 +23,21 @@ const listOfListV2 = lines.reduce((prev, curr) => {
 	return prev;
 }, {});
 console.info({ listOfListV2 });
+
+/*
+  listOfListV2: {
+    A: [ 'B', 'D' ],
+    B: [ 'A', 'C' ],
+    C: [ 'B', 'D', 'H' ],
+    D: [ 'A', 'C', 'E', 'F' ],
+    E: [ 'D', 'G' ],
+    F: [ 'D', 'G' ],
+    G: [ 'E', 'F' ],
+    H: [ 'C', 'I' ],
+    I: [ 'H' ]
+  }
+
+  get max item of listOfListV2 using native functions
+*/
+
+const queue: number[] = [];
