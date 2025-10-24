@@ -1,5 +1,7 @@
 import fs from 'node:fs';
 import { EOL } from 'node:os';
+import { RlfPriorityQueue } from './rlf-priority-queue';
+import type { RlfQueue } from './types';
 
 console.info('Coloração Grafos...');
 
@@ -40,4 +42,9 @@ console.info({ listOfListV2 });
   get max item of listOfListV2 using native functions
 */
 
-const queue: number[] = [];
+const queue = new RlfPriorityQueue();
+console.info(Object.values<RlfQueue>(listOfListV2));
+Object.values<RlfQueue>(listOfListV2).forEach(item => {
+	queue.insert(item);
+});
+console.info(queue);

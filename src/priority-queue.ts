@@ -1,4 +1,4 @@
-export abstract class PriorityQueue<T> {
+abstract class PriorityQueue<T> {
 	private readonly queue: T[] = [];
 
 	public insert(elem: T): void {
@@ -12,6 +12,10 @@ export abstract class PriorityQueue<T> {
 		}
 	}
 
-	public remove(): void {}
+	public remove(): T | undefined {
+		return this.queue.shift();
+	}
 	abstract isLessThanCurrent(a: T, b: T): boolean;
 }
+
+export { PriorityQueue };

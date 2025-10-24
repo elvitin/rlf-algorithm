@@ -3,7 +3,8 @@
 	"editor.minimap.enabled": false,
 	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
-		"source.organizeImports.biome": "always"
+		"source.organizeImports.biome": "always",
+		"source.fixAll.biome": "always"
 	},
 	"explorer.compactFolders": false,
 	"scm.compactFolders": false,
