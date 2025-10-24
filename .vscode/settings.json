@@ -1,10 +1,13 @@
 {
 	"editor.tabSize": 2,
-	"explorer.compactFolders": false,
+	"editor.minimap.enabled": false,
 	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports.biome": "always"
+	},
+	"explorer.compactFolders": false,
 	"scm.compactFolders": false,
 	"workbench.iconTheme": "material-icon-theme",
-	"editor.minimap.enabled": false,
 	"git.autofetch": true,
 	"terminal.integrated.defaultProfile.windows": "Command Prompt",
 	"[typescript]": {
