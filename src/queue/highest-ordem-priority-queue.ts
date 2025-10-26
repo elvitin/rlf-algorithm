@@ -12,6 +12,11 @@ class HighestOrdemPriorityQueue extends PriorityQueue<Vertex> {
   public addAll(vertices: Vertex[]): void {
     vertices.forEach(this.add.bind(this));
   }
+
+  public display(): void {
+    // biome-ignore lint/complexity/useLiteralKeys: it's fine here
+    console.info(`Queue state: <${this['queue'].map(v => v.label).join(',')}>`);
+  }
   isLessThanCurrent(a: Vertex, b: Vertex): boolean {
     return b.adjacent.length < a.adjacent.length;
   }

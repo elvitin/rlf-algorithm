@@ -65,10 +65,12 @@ class RlfAlgorithm {
     matrix.display();
 
     const queue = HighestOrdemPriorityQueue.buildFrom([startingVertex]);
-
     while (queue.size()) {
+      queue.display();
       const nextVertex = queue.poll() as Vertex;
+      queue.display();
       queue.addAll(nextVertex.adjacent.filter(vertex => !matrix.hasColorSetted(vertex.label)));
+
       matrix.setColor(
         nextVertex.label,
         nextVertex.adjacent.map(v => v.label)
