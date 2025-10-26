@@ -26,10 +26,20 @@
 	},
 	"javascript": {
 		"formatter": {
+			"enabled": true,
+			"arrowParentheses": "asNeeded",
 			"quoteStyle": "single",
+			"semicolons": "always",
 			"indentWidth": 2,
+			"quoteProperties": "asNeeded",
+			"attributePosition": "auto",
+			"bracketSpacing": true,
+			"jsxQuoteStyle": "single",
+			"indentStyle": "space",
+			"lineEnding": "lf",
 			"lineWidth": 120,
-			"arrowParentheses": "asNeeded"
+			"bracketSameLine": true,
+			"trailingCommas": "none"
 		}
 	},
 	"assist": {

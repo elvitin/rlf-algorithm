@@ -4,6 +4,8 @@
 		"christian-kohler.path-intellisense",
 		"biomejs.biome",
 		"xabikos.javascriptsnippets",
-		"tomoki1207.pdf"
+		"tomoki1207.pdf",
+		"gruntfuggly.todo-tree",
+		"meganrogge.template-string-converter"
 	]
 }
