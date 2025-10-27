@@ -1,4 +1,4 @@
-import { getLines } from '../helpers/get-lines';
+import { getLines } from '../helpers/get_lines';
 import type { GraphLikeList } from '../types';
 import type { IGraphBuilder } from './graph_builder.interface';
 

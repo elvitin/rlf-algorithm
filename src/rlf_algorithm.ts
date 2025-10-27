@@ -1,7 +1,6 @@
 import cloneDeep from 'lodash/cloneDeep';
-import { GraphColoringMatrix } from './graph-coloring-matrix';
-import { getLines } from './helpers/get-lines';
-import { HighestOrdemPriorityQueue } from './queue/highest-ordem-priority-queue';
+import { GraphColoringMatrix } from './graph_coloring_matrix';
+import { HighestOrdemPriorityQueue } from './queue/highest_ordem_priority_queue';
 import type { GraphLikeList, Vertex } from './types';
 
 class RlfAlgorithm {

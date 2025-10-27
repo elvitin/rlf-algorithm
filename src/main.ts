@@ -3,7 +3,7 @@ import path from 'node:path';
 import type { IGraphBuilder } from './graph_builders/graph_builder.interface';
 import { ListGraphBuilder } from './graph_builders/list_graph_builder';
 import { MatrixGraphBuilder } from './graph_builders/matrix_graph_builder';
-import { RlfAlgorithm } from './rlf-algorithm';
+import { RlfAlgorithm } from './rlf_algorithm';
 
 (async function main() {
   const [builderType, relativePath] = process.argv.slice(2);
