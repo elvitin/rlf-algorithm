@@ -1,5 +1,5 @@
 import type { GraphLikeList, Vertex } from '../types';
-import { PriorityQueue } from './priority-queue';
+import { PriorityQueue } from './priority_queue';
 
 class HighestOrdemPriorityQueue extends PriorityQueue<Vertex> {
   // FIXME: eleger se buildFrom vai pertencer a PrioryQueue
