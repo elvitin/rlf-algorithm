@@ -2,11 +2,11 @@
 	"name": "rlf-algorithm",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "dist/main.js",
 	"type": "module",
 	"scripts": {
-		"dev": "npx tsx src/index.ts",
-		"dev:watch": "npx tsx --watch src/index.ts",
+		"dev": "npx tsx src/main.ts",
+		"dev:watch": "npx tsx --watch src/main.ts",
 		"fmt:lint": "npx @biomejs/biome check --write",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
