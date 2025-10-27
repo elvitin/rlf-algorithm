@@ -15,6 +15,10 @@ abstract class PriorityQueue<T> {
     }
   }
 
+  public addAll(elems: T[]): void {
+    elems.forEach(this.add.bind(this));
+  }
+
   public maximum(): T | undefined {
     return this.queue.at(0);
   }
@@ -38,6 +42,8 @@ abstract class PriorityQueue<T> {
   abstract isLessThanCurrent(a: T, b: T): boolean;
 
   abstract keyToCompare(elem: T): string;
+
+  abstract display(): void;
 }
 
 export { PriorityQueue };

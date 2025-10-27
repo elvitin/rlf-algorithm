@@ -9,11 +9,7 @@ class HighestOrdemPriorityQueue extends PriorityQueue<Vertex> {
     return queue;
   }
 
-  public addAll(vertices: Vertex[]): void {
-    vertices.forEach(this.add.bind(this));
-  }
-
-  public display(): void {
+  display(): void {
     // biome-ignore lint/complexity/useLiteralKeys: it's fine here
     console.info(`Queue state: <${this['queue'].map(v => v.label).join(',')}>`);
   }
