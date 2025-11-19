@@ -69,20 +69,33 @@ class GraphColoringMatrix {
   public setColor(label: string, labelsOfAdjacentVertices: string[]): void {
     const labelIndex = this.findIndexOfLabel(label);
     if (labelIndex === -1) return;
-    const color =
-      this.colorLabelType === 'numbers'
-        ? String(this.nextColorColumnIndex + 1)
-        : this.generateLatterLabels()[this.nextColorColumnIndex];
 
-    this.matrix[labelIndex][this.nextColorColumnIndex] = color;
+    let targetColumnIndex = -1;
 
-    for (let i = 0; i < this.vertexLabels.length; i++) {
-      if (i !== labelIndex && labelsOfAdjacentVertices.some(l => l === this.vertexLabels[i])) {
-        this.matrix[i][this.nextColorColumnIndex] = 'x';
+    for (let i = 0; i < this.nextColorColumnIndex; i++) {
+      if (this.matrix[labelIndex][i] !== 'x') {
+        targetColumnIndex = i;
+        break;
       }
     }
 
-    this.nextColorColumnIndex++;
+    if (targetColumnIndex === -1) {
+      targetColumnIndex = this.nextColorColumnIndex;
+      this.nextColorColumnIndex++;
+    }
+
+    const color =
+      this.colorLabelType === 'numbers'
+        ? String(targetColumnIndex + 1)
+        : this.generateLatterLabels()[targetColumnIndex];
+
+    this.matrix[labelIndex][targetColumnIndex] = color;
+
+    for (let i = 0; i < this.vertexLabels.length; i++) {
+      if (i !== labelIndex && labelsOfAdjacentVertices.some(l => l === this.vertexLabels[i])) {
+        this.matrix[i][targetColumnIndex] = 'x';
+      }
+    }
   }
 
   public hasColorSetted(label: string): boolean {
